@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('网页背景4.png'); /* 第四页的背景图片 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow:hidden;
+}
+
+
+/* 摇晃图片样式 */
+.望远镜 {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    animation: shake 0.5s infinite; /* 添加动画 */
+}
+
+/* 定义摇晃动画 */
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-5px, 5px) rotate(-5deg); }
+    50% { transform: translate(5px, -5px) rotate(5deg); }
+    75% { transform: translate(-5px, -5px) rotate(-3deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+

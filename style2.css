@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('网页背景2.png'); /* 第二页的背景图片 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow:hidden;
+}
+
+.字{
+    width: 800px;
+    position: absolute;
+    bottom: 450px; ;
+    right:400px ;
+}
+/* Cat 图片样式 */
+.nextpage {
+    width: 230px;
+    position: absolute;
+    bottom: 250px; /* 距离底部 20px */
+    right: 1200px; /* 距离右侧 20px */
+    transition: transform 0.3s ease;
+}
+
+.nextpage:hover {
+    transform: scale(1.1); /* 鼠标悬停时稍微放大 */
+}
+
+
+
+/* 照片容器 */
+.photo {
+    width: 1000px;
+    position: absolute;
+    bottom: 100px;
+    left: 250px;
+    transform-origin: top center; /* 定义旋转中心 */
+    animation: swing 3s infinite ease-in-out; /* 晃动动画 */
+}
+
+/* 照片中的图片 */
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* 前后晃动动画 */
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}

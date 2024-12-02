@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('网页背景5.png'); /* 第五页的背景图片 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow:hidden;
+   
+}
+.回忆{
+    width: 40%;
+    bottom: 200px;
+    right: 450px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.回忆:hover {
+    transform: scale(1.1); /* 鼠标悬停时稍微放大 */
+}
